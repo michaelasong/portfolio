@@ -85,6 +85,7 @@ a:hover {
   display: grid;
   grid-template-columns: auto;
 }
+
 .card {
   padding: 15px;
   margin: 10px 0;
@@ -94,6 +95,7 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
+
 .img {
   width: 100%;
 }
@@ -135,8 +137,8 @@ a:hover {
   line-height: 24px;
   margin-bottom: 20px;
   font-size: 15px;
-  line-height: 24px;
 }
+
 .button-links {
   margin-bottom: 35px;
 }
@@ -144,10 +146,12 @@ a:hover {
 ul {
   list-style-type: none;
 }
+
 .button-links ul {
   list-style-type: none;
   display: flex;
 }
+
 .button-links li {
   align-items: center;
   padding: 4px 12px;
@@ -176,15 +180,13 @@ ul {
   padding: 5px;
 }
 
-.languages li img{
+.languages li img {
   height: 40px;
   margin-left: 10px;
-  vertical-align:middle
+  vertical-align: middle;
 }
 
 .item {
   border-bottom: 2px solid #f7f7f9;
   margin-left: 20px;
-ul {
-  list-style: none;
 }
