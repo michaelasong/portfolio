@@ -52,7 +52,7 @@ nav img {
   padding-top: 10px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: #344563;
   flex: none;
@@ -185,4 +185,6 @@ ul {
 .item {
   border-bottom: 2px solid #f7f7f9;
   margin-left: 20px;
+ul {
+  list-style: none;
 }
