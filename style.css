@@ -1,7 +1,6 @@
 * {
   font-family: "Poppins", sans-serif;
   padding: 0;
-  /* margin: 0; */
 }
 
 .backgroundimg {
@@ -61,15 +60,13 @@ nav img {
   flex-grow: 0;
 }
 
-
-a{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7f8cff;
-    text-decoration: none;
-  
+a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-decoration: none;
 }
 
 .socialMedia {
@@ -80,9 +77,6 @@ a{
   padding-top: 20px;
 }
 
-a:link a:hover {
+a:hover {
   text-decoration: none;
 }
-a:hover {
-    text-decoration: none;
-  }
