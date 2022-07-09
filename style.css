@@ -150,6 +150,7 @@ ul {
 .button-links ul {
   list-style-type: none;
   display: flex;
+  color: #6977FF;
 }
 
 .button-links li {
