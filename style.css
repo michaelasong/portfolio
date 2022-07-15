@@ -49,6 +49,15 @@ nav img {
   display: grid;
   grid-template-rows: auto auto;
   padding: 8px 0 0 3px;
+  transition: font-size 2s;
+}
+
+.menuSection a:hover {
+  font-size: 20px;
+}
+
+.socialMedia li img:hover {
+  transform: scale(1.5);
 }
 
 .Whoiam {
