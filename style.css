@@ -8,7 +8,11 @@
 }
 
 body {
-  width: 500px;
+  width: fit-content;
+}
+
+.rest {
+  display: none;
 }
 
 .navmenu {
@@ -231,4 +235,94 @@ textarea {
   height: 30px;
   border-radius: 5px;
   border: 1px solid #cfd8dc;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 50px;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .menuSection1 {
+    display: inline-block;
+  }
+
+  .onion {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .rest {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+  }
+
+  .introduction {
+    width: 320px;
+  }
+
+  .Whoiam {
+    width: 700px;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  .card img {
+    width: 500px;
+    margin-right: 30px;
+  }
+
+  .myself {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .left {
+    width: 390px;
+  }
+
+  .myself li ul {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 100px;
+  }
+
+  .languages li {
+    width: 300px;
+    height: 70px;
+  }
+
+  .item {
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  .contact-me {
+    width: 400px;
+  }
+
+  .input-li input {
+    width: 347px;
+  }
+
+  textarea {
+    width: 347px;
+  }
+
+  .submit-li {
+    display: flex;
+    justify-content: center;
+  }
 }
