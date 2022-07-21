@@ -11,8 +11,8 @@
 - CSS
 
 ## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+link to project portfolio
+(https://michaelasong.github.io/portfolio/)
 
 
 ## Getting Started
