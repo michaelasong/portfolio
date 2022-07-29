@@ -3,7 +3,9 @@
   padding: 0;
   margin: 0;
 }
-
+.logo{
+  color: #344563;
+}
 body {
   width: fit-content;
   background-color: #e5e5e5;
@@ -353,6 +355,50 @@ textarea {
   width: 18px;
 }
 
+
+.small-screen {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 255, 0.718);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.small-menu{
+  align-items: center;
+  color: white;
+  font-size: 32px;
+}
+.small-menu li{
+  margin: 20px;
+ padding-left: 30px;
+}
+
+.small-menu li a {
+  font-size: 28px;
+  color: white;
+}
+
+.small-menu li:first-child{
+ text-align: right;
+ cursor: pointer;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+
+}
+.onion {
+  cursor: pointer;
+}
+
 /*
 header
 */
@@ -369,15 +415,32 @@ header
     display: inline-block;
   }
 
-  .onion {
-    display: none;
+ .onion {
+   display: none;
+    cursor: pointer;
   }
 
-  header {
+   /* 
+  .small-screen {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    opacity: 50%;
+  }
+  .small-menu{
+    align-items: center;
+    color: white;
+  }
+  nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-  }
+    background-color: red;
+    width: 100%;
+
+  } */
 
   .rest {
     display: flex;

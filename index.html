@@ -10,18 +10,43 @@
 </head>
 
 <body>
+  <script src="app.js"></script>
+  <nav>
+    <h3 class="logo">My Logo</h3>
+    <div class="rest">
+      <div><a href="#cards">Portfolio</a></div>
+      <div><a href="#about">About</a></div>
+      <div><a href="#contact">Contact</a></div>
+    </div>
+    <img class="onion" onclick="OpenBar()" src="image/Union.png" alt="" />
+ </nav>
+
+
+<div class="small-screen">
+  <ul class="small-menu" id="small-menu">
+
+    <li onclick="CloseBar()" >
+      X
+    </li>
+
+    <li onclick="CloseBar()">
+      <a href="#cards">Portfolio</a>
+    </li>
+
+    <li onclick="CloseBar()">
+      <a href="#about">About</a>
+    </li>
+
+    <li onclick="CloseBar()">
+      <a href="#contact">Contact</a>
+    </li>
+
+  </ul>
+</div>
+
+
   <div class="container">
-    <header>
-      <nav class="navmenu">
-        <h3>My Logo</h3>
-      </nav>
-      <img class="onion" src="image/Union.png" alt="" />
-      <div class="rest">
-        <div>Portfolio</div>
-        <div>About</div>
-        <div>Contact</div>
-      </div>
-    </header>
+   
     <section class="backgroundimg">
       <div class="menuSection menuSection1">
         <h2 class="introduction">I’m Mariane Glad to see you!</h2>
@@ -179,7 +204,7 @@
       </div>
     </div>
 
-    <div class="myself">
+    <div id="about" class="myself">
       <div class="left">
         <div class="description">
           <h2 class="topic">About <br /> Myself</h2>
@@ -238,7 +263,7 @@
       </ul>
     </div>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="contact-me">
         <h2>Contact me</h2>
         <p>
