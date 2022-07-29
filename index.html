@@ -10,18 +10,43 @@
 </head>
 
 <body>
+  <script src="app.js"></script>
+  <nav>
+    <h3 class="logo">My Logo</h3>
+    <div class="rest">
+      <div><a href="#cards">Portfolio</a></div>
+      <div><a href="#about">About</a></div>
+      <div><a href="#contact">Contact</a></div>
+    </div>
+    <img class="onion" onclick="OpenBar()" src="image/Union.png" alt="" />
+  </nav>
+
+
+  <div class="small-screen">
+    <ul class="small-menu" id="small-menu">
+
+      <li onclick="CloseBar()">
+        X
+      </li>
+
+      <li onclick="CloseBar()">
+        <a href="#cards">Portfolio</a>
+      </li>
+
+      <li onclick="CloseBar()">
+        <a href="#about">About</a>
+      </li>
+
+      <li onclick="CloseBar()">
+        <a href="#contact">Contact</a>
+      </li>
+
+    </ul>
+  </div>
+
+
   <div class="container">
-    <header>
-      <nav class="navmenu">
-        <h3>My Logo</h3>
-      </nav>
-      <img class="onion" src="image/Union.png" alt="" />
-      <div class="rest">
-        <div>Portfolio</div>
-        <div>About</div>
-        <div>Contact</div>
-      </div>
-    </header>
+
     <section class="backgroundimg">
       <div class="menuSection menuSection1">
         <h2 class="introduction">I’m Mariane Glad to see you!</h2>
@@ -81,7 +106,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <a href="#" class="project">See Project</a>
+            <div class="project" onclick="showPopUp ('tonic')">See Project</div>
           </div>
         </div>
 
@@ -112,7 +137,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <a href="#" class="project">See Project</a>
+            <div class="project" onclick="showPopUp ('Multi')">See Project</div>
           </div>
           <img class="img" src="image/card-2.svg" alt="" />
         </div>
@@ -141,7 +166,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <a href="#" class="project">See Project</a>
+            <div class="project" onclick="showPopUp ('tonic2')">See Project</div>
           </div>
         </div>
 
@@ -172,14 +197,14 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <a href="#" class="project">See Project</a>
+            <div class="project" onclick="showPopUp ('tonic')">See Project</div>
           </div>
           <img class="img" src="image/card-4.svg" alt="" />
         </div>
       </div>
     </div>
 
-    <div class="myself">
+    <div id="about" class="myself">
       <div class="left">
         <div class="description">
           <h2 class="topic">About <br /> Myself</h2>
@@ -224,21 +249,21 @@
           </ul>
         </li>
         <li>
-        <span class="topicItem">
-          <span>Frameworks</span>
-          <span> <img class="arrow" src="./image/arrow2.png" alt="'arr" /> </span>
-        </span>
-        <hr />
-        <div class="topicItem">
-          <span>Skills</span>
-          <span> <img class="arrow" src="./image/arrow2.png" alt="'arr" /> </span>
-        </div>
-        <hr />
-      </li>
+          <span class="topicItem">
+            <span>Frameworks</span>
+            <span> <img class="arrow" src="./image/arrow2.png" alt="'arr" /> </span>
+          </span>
+          <hr />
+          <div class="topicItem">
+            <span>Skills</span>
+            <span> <img class="arrow" src="./image/arrow2.png" alt="'arr" /> </span>
+          </div>
+          <hr />
+        </li>
       </ul>
     </div>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
       <div class="contact-me">
         <h2>Contact me</h2>
         <p>
@@ -271,6 +296,63 @@
         </div>
       </div>
     </footer>
+  </div>
+
+
+  <!----Pop Up Section-->
+
+
+  <div id="popUps">
+
+    <div id="tonic" class="popContent">
+
+      <div class="popHeading">
+        <h3>Tonic</h3>
+        <h3 onclick="closePopUp()" >x</h3>
+      </div>
+
+      <ul class="popDesc">
+        <li>CANOPY</li>
+        <li>Back End Dev</li>
+        <li>2015</li>
+      </ul>
+
+      <img class="popImg" src="image/card-4.svg" alt="" />
+
+      <div class="popDetails">
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis eveniet impedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harum id commodi. 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illo maiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti molestiae?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nesciunt cumque, iste adipisci ratione tempora quibusdam quaerat atque voluptatem enim veniam quos dolore soluta blanditiis unde delectus possimus, alias totam.
+        </p>
+
+        <div class="lang">
+
+          <ul class="langTags">
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+    
+          <div class="popBtns">
+            <button class="seeBtn">See Live</button>
+            <button class="seeBtn">See Source</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div>
+
+    </div>
+
+    <div></div>
+
+    <div></div>
+
   </div>
 </body>
 
