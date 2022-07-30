@@ -89,8 +89,7 @@ function showPopUp(a) {
 
   // pop test description
   const detail = document.createElement('p');
-  detail.innerText =
-    ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti';
+  detail.innerText = ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti';
   detail.className = 'popDetails';
 
   const lang = document.createElement('div');
