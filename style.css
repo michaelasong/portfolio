@@ -651,3 +651,8 @@ header
   display: flex;
   flex-flow: row wrap;
 }
+
+#error {
+  color: red;
+  font-weight: 700;
+}

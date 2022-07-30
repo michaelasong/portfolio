@@ -145,8 +145,7 @@ function validateForm() {
   const err = document.getElementsByClassName('error');
 
   if (form !== form.toLowerCase()) {
-    // eslint-disable-next-line no-alert
-    alert('Wrong email format remove upper case');
+    document.getElementById('error').innerHTML += "Email can't contain capital letters";
     return false;
   }
 }
