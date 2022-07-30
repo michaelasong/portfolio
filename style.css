@@ -262,10 +262,6 @@ ul {
   transition: all 0.2s ease-in;
 }
 
-.languages {
-  padding: 0;
-}
-
 .languages li {
   display: flex;
   flex-direction: column;
@@ -357,6 +353,17 @@ textarea {
   width: 18px;
 }
 
+.popDesc li {
+  margin: 10px;
+}
+
+.langTags li {
+  margin: 3px;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: lightblue;
+}
+
 .small-screen {
   display: none;
   flex-direction: column;
@@ -393,10 +400,10 @@ textarea {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding:10px 30px;
+  padding: 10px 30px;
 }
 
 .onion {
@@ -434,20 +441,16 @@ nav {
   width: 100%;
 }
 
-.popHeading  h3:last-child {
+.popHeading h3:last-child {
   cursor: pointer;
 }
 
-.popDesc{
+.popDesc {
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
   width: 100%;
-}
-
-.popDesc li {
-  margin: 10px;
 }
 
 .popImg {
@@ -456,21 +459,27 @@ nav {
 }
 
 .popDetails {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 20px auto;
   width: 100%;
   text-align: justify;
 }
 
+.popDetails > .lang,
+.popDetails > p {
+  width: 100%;
+}
+
 .languages {
   width: 50%;
 }
+
 /*
 header
 */
+
 @media only screen and (min-width: 768px) {
   .container {
     padding: 0 0 0 0;
@@ -579,11 +588,11 @@ header
     width: 100%;
   }
 
-  .popHeading  h3:last-child {
+  .popHeading h3:last-child {
     cursor: pointer;
   }
 
-  .popDesc{
+  .popDesc {
     flex-direction: row;
     width: 100%;
   }
@@ -594,8 +603,17 @@ header
   }
 
   .popDetails {
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: row;
     width: 100%;
+  }
+
+  .popDetails > p {
+    width: 62%;
+  }
+
+  .popDetails > .lang {
+    width: 36%;
   }
 
   .languages {
@@ -627,13 +645,6 @@ header
   display: flex;
   flex-flow: row wrap;
   list-style: none;
-}
-
-.langTags li {
-  margin: 3px;
-  padding: 5px;
-  border-radius: 6px;
-  background-color: lightblue;
 }
 
 .popBtns {
