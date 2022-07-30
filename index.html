@@ -9,7 +9,7 @@
   <title>Document</title>
 </head>
 
-<body>
+<body onload="onLoad()">
   <script src="app.js"></script>
   <nav>
     <h3 class="logo">My Logo</h3>
@@ -106,7 +106,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <div class="project" onclick="showPopUp ('tonic')">See Project</div>
+            <div class="project" onclick="showPopUp (0)">See Project</div>
           </div>
         </div>
 
@@ -137,7 +137,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <div class="project" onclick="showPopUp ('Multi')">See Project</div>
+            <div class="project" onclick="showPopUp (1)">See Project</div>
           </div>
           <img class="img" src="image/card-2.svg" alt="" />
         </div>
@@ -166,7 +166,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <div class="project" onclick="showPopUp ('tonic2')">See Project</div>
+            <div class="project" onclick="showPopUp (2)">See Project</div>
           </div>
         </div>
 
@@ -197,7 +197,7 @@
                 <li>javascript</li>
               </ul>
             </div>
-            <div class="project" onclick="showPopUp ('tonic')">See Project</div>
+            <div class="project" onclick="showPopUp (3)">See Project</div>
           </div>
           <img class="img" src="image/card-4.svg" alt="" />
         </div>
@@ -274,86 +274,34 @@
       </div>
 
       <div class="contact-forms">
-        <form class="message-form" action="https://formspree.io/f/xqknrzed" method="post">
+        <form name="form1" onsubmit="return validateForm()" class="message-form" action="https://formspree.io/f/xqknrzed" method="post" >
 
           <div class="input-li">
-            <input type="text" name="text" id="text-input" placeholder="Yeremias" maxlength="30" required>
+            <input type="text" name="text" oninput="updateForm()" id="text-input" placeholder="Yeremias" maxlength="30" required>
           </div>
+
           <div class="input-li">
-            <input type="email" name="email" id="mail" placeholder="natajay14@gmail.com" required>
+            <input type="email"  name="email" oninput="updateForm()" id="mail" placeholder="natajay14@gmail.com" required>
           </div>
+
           <div class="text-area-li">
-            <textarea name="msg" id="msg" maxlength="500" placeholder="Write your messages here" required></textarea>
-
+            <textarea name="msg" id="msg" maxlength="500" oninput="updateForm()" placeholder="Write your messages here" required></textarea>
           </div>
           <div class="submit-li">
             <button type="submit" class="project2">Get in Touch</button>
+            <div id="error"></div>
           </div>
 
         </form>
+
         <div class="last-img">
           <img src="./images/Shape.png" alt="">
         </div>
+
       </div>
     </footer>
   </div>
 
-
-  <!----Pop Up Section-->
-
-
-  <div id="popUps">
-
-    <div id="tonic" class="popContent">
-
-      <div class="popHeading">
-        <h3>Tonic</h3>
-        <h3 onclick="closePopUp()" >x</h3>
-      </div>
-
-      <ul class="popDesc">
-        <li>CANOPY</li>
-        <li>Back End Dev</li>
-        <li>2015</li>
-      </ul>
-
-      <img class="popImg" src="image/card-4.svg" alt="" />
-
-      <div class="popDetails">
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis eveniet impedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harum id commodi. 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illo maiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti molestiae?
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nesciunt cumque, iste adipisci ratione tempora quibusdam quaerat atque voluptatem enim veniam quos dolore soluta blanditiis unde delectus possimus, alias totam.
-        </p>
-
-        <div class="lang">
-
-          <ul class="langTags">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-    
-          <div class="popBtns">
-            <button class="seeBtn">See Live</button>
-            <button class="seeBtn">See Source</button>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div>
-
-    </div>
-
-    <div></div>
-
-    <div></div>
-
-  </div>
 </body>
 
 </html>
