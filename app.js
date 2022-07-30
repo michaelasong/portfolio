@@ -9,6 +9,32 @@ function CloseBar() {
   closebtn.style.display = 'none';
 }
 
+const projects = [{
+  name: 'Tonic',
+  description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti',
+  image: './image/card-1.svg',
+  technologies: ['Html', 'Css', 'Javascript'],
+},
+{
+  name: 'Multi-Post Stories',
+  description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti',
+  image: './image/card-2.svg',
+  technologies: ['Html', 'Css', 'Javascript'],
+},
+{
+  name: 'Tonic',
+  description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti',
+  image: './image/card-3.svg',
+  technologies: ['Html', 'Css', 'Javascript'],
+},
+{
+  name: 'Multi-Post Stories',
+  description: 'A Phaser3 platform game built as part of the Microverse JavaScript program.',
+  image: './image/card-4.svg',
+  technologies: ['Html', 'Css', 'Javascript'],
+},
+];
+
 function showPopUp(a) {
   // popUp container is created with a class assign
   const popUps = document.createElement('div');
@@ -25,7 +51,7 @@ function showPopUp(a) {
   const title = document.createElement('h1');
   const close = document.createElement('h3');
 
-  title.innerText = a;
+  title.innerText = projects[a].name;
   close.innerText = 'x';
 
   popHeading.appendChild(title);
@@ -49,7 +75,7 @@ function showPopUp(a) {
 
   // pop iMages
   const image = document.createElement('img');
-  image.src = './image/card-1.svg';
+  image.src = projects[a].image;
   image.className = 'popImg';
 
   // PopDetails
@@ -66,7 +92,7 @@ function showPopUp(a) {
 
   const langTags = document.createElement('ul');
   langTags.className = 'langTags';
-  const items3 = ['Html', 'CSS', 'JAVASCRIPT'];
+  const items3 = projects[a].technologies;
 
   for (let i = 0; i < items3.length; i += 1) {
     const li = document.createElement('li');
@@ -106,4 +132,4 @@ function closePopUp() {
   pop.style.display = 'none';
 }
 
-// --------------- form Validation ----------------
+// --------------- Redone ----------------
