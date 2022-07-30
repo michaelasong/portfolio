@@ -9,30 +9,35 @@ function CloseBar() {
   closebtn.style.display = 'none';
 }
 
-const projects = [{
-  name: 'Tonic',
-  description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti',
-  image: './image/card-1.svg',
-  technologies: ['Html', 'Css', 'Javascript'],
-},
-{
-  name: 'Multi-Post Stories',
-  description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti',
-  image: './image/card-2.svg',
-  technologies: ['Html', 'Css', 'Javascript'],
-},
-{
-  name: 'Tonic',
-  description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti',
-  image: './image/card-3.svg',
-  technologies: ['Html', 'Css', 'Javascript'],
-},
-{
-  name: 'Multi-Post Stories',
-  description: 'A Phaser3 platform game built as part of the Microverse JavaScript program.',
-  image: './image/card-4.svg',
-  technologies: ['Html', 'Css', 'Javascript'],
-},
+const projects = [
+  {
+    name: 'Tonic',
+    description:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti',
+    image: './image/card-1.svg',
+    technologies: ['Html', 'Css', 'Javascript'],
+  },
+  {
+    name: 'Multi-Post Stories',
+    description:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti',
+    image: './image/card-2.svg',
+    technologies: ['Html', 'Css', 'Javascript'],
+  },
+  {
+    name: 'Tonic',
+    description:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias iusto architecto blanditiis evenietimpedit tenetur dolorem, non voluptates atque itaque quaerat praesentium incidunt eligendi nostrum animi harumid commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis blanditiis similique neque illomaiores vel repudiandae odit? Facere error suscipit laborum a deleniti rerum dicta quas est corrupti',
+    image: './image/card-3.svg',
+    technologies: ['Html', 'Css', 'Javascript'],
+  },
+  {
+    name: 'Multi-Post Stories',
+    description:
+      'A Phaser3 platform game built as part of the Microverse JavaScript program.',
+    image: './image/card-4.svg',
+    technologies: ['Html', 'Css', 'Javascript'],
+  },
 ];
 
 function showPopUp(a) {
@@ -132,4 +137,16 @@ function closePopUp() {
   pop.style.display = 'none';
 }
 
-// --------------- Redone ----------------
+// --------------- form validation section ----------------
+
+// eslint-disable-next-line consistent-return
+function validateForm() {
+  const form = document.forms.form1.mail.value;
+  const err = document.getElementsByClassName('error');
+
+  if (form !== form.toLowerCase()) {
+    // eslint-disable-next-line no-alert
+    alert('Wrong email format remove upper case');
+    return false;
+  }
+}

@@ -274,26 +274,29 @@
       </div>
 
       <div class="contact-forms">
-        <form class="message-form" action="https://formspree.io/f/xqknrzed" method="post">
+        <form name="form1" onsubmit="return validateForm()" class="message-form" action="https://formspree.io/f/xqknrzed" method="post" >
 
           <div class="input-li">
             <input type="text" name="text" id="text-input" placeholder="Yeremias" maxlength="30" required>
           </div>
+
           <div class="input-li">
-            <input type="email" name="email" id="mail" placeholder="natajay14@gmail.com" required>
+            <input type="email"  name="email" id="mail" placeholder="natajay14@gmail.com" required>
           </div>
+
           <div class="text-area-li">
             <textarea name="msg" id="msg" maxlength="500" placeholder="Write your messages here" required></textarea>
-
           </div>
           <div class="submit-li">
             <button type="submit" class="project2">Get in Touch</button>
           </div>
 
         </form>
+
         <div class="last-img">
           <img src="./images/Shape.png" alt="">
         </div>
+
       </div>
     </footer>
   </div>
